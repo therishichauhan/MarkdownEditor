@@ -1,10 +1,13 @@
 ## Abstract
+
 The MarkdownTextEditor is an innovative, user-centric Markdown editing application developed using SwiftUI. This project addresses the growing need for an intuitive, efficient, and feature-rich Markdown editing environment. By leveraging modern Swift programming techniques and SwiftUI's declarative UI framework, the application provides a seamless writing experience with real-time rendering, comprehensive syntax support, and an elegant user interface.
 
 ## Acknowledgements
+
 I would like to express my deepest gratitude to my mentor, Dr. Deepak Ahlawat, whose guidance, support, and expertise were instrumental in the successful completion of this project. His insightful feedback, continuous encouragement, and profound knowledge in software development have been invaluable throughout the research and implementation process.
 
 I am particularly thankful for Dr. Ahlawat's:
+
 - Detailed technical guidance
 - Constructive criticism
 - Patience in explaining complex concepts
@@ -13,6 +16,7 @@ I am particularly thankful for Dr. Ahlawat's:
 Special thanks to my department, colleagues, and family who provided moral support and understanding during the project development.
 
 ## Table of Contents
+
 | Chapter | Title | Page |
 |---------|-------|------|
 | Title Page | Project Information | i |
@@ -52,6 +56,7 @@ Special thanks to my department, colleagues, and family who provided moral suppo
 | 12 | Appendices | 20 |
 
 ## List of Figures
+
 1. Application Architecture Diagram
 2. User Interface Wireframe
 3. Markdown Parsing Flow
@@ -59,6 +64,7 @@ Special thanks to my department, colleagues, and family who provided moral suppo
 5. Feature Interaction Flowchart
 
 ## List of Tables
+
 1. Feature Comparison Matrix
 2. Development Environment Specifications
 3. Performance Benchmarks
@@ -66,6 +72,7 @@ Special thanks to my department, colleagues, and family who provided moral suppo
 5. Future Enhancement Roadmap
 
 ## List of Abbreviations
+
 - UI: User Interface
 - IDE: Integrated Development Environment
 - SwiftUI: Swift User Interface Framework
@@ -74,39 +81,52 @@ Special thanks to my department, colleagues, and family who provided moral suppo
 - JSON: JavaScript Object Notation
 
 ## 1. Introduction
+
 ### 1.1 Background of Markdown
+
 Markdown, created by John Gruber in 2004, is a lightweight markup language designed to be easy to write and read. Its simplicity and versatility have made it a popular choice for documentation, readme files, blog posts, and technical writing. Despite its widespread adoption, many existing Markdown editors suffer from complex interfaces, limited rendering capabilities, and platform-specific constraints.
 
 ### 1.2 Motivation and Problem Context
+
 The motivation behind MarkdownTextEditor stems from several observed limitations in existing Markdown editing tools:
+
 - Lack of real-time, intuitive rendering
 - Complex, cluttered user interfaces
 - Limited cross-platform compatibility
 - Inadequate syntax support and guidance
 
 ### 1.3 Project Vision
+
 The primary vision of MarkdownTextEditor is to create a:
+
 - User-friendly Markdown editing experience
 - Lightweight, performant application
 - Comprehensive Markdown syntax support
 - Intuitive, responsive user interface
 
 ## 2. Background and Literature Review
+
 ### 2.1 Existing Markdown Editors
+
 A comprehensive review of existing Markdown editors revealed critical insights:
 
 #### 2.1.1 Commercial Solutions
+
 - Typora: Elegant but platform-limited
 - MacDown: Open-source, macOS-specific
 - MarkText: Electron-based, performance overhead
 
 #### 2.1.2 Web-Based Alternatives
+
 - Dillinger: Online-only, limited offline capabilities
 - StackEdit: Feature-rich but dependent on internet connectivity
 
 ### 2.2 Technology Landscape
+
 #### 2.2.1 SwiftUI Advantages
+
 SwiftUI emerged as the optimal framework due to:
+
 - Declarative, intuitive syntax
 - Native platform integration
 - Reactive programming model
@@ -114,12 +134,15 @@ SwiftUI emerged as the optimal framework due to:
 - Cross-platform compatibility
 
 #### 2.2.2 Alternative Frameworks Considered
+
 - UIKit: More verbose, imperative approach
 - AppKit: Limited cross-platform support
 - React Native: Performance and native feel concerns
 
 ## 3. Problem Statement
+
 Develop a comprehensive Markdown editing solution that:
+
 1. Provides real-time, accurate Markdown rendering
 2. Supports extensive Markdown syntax
 3. Offers an intuitive, responsive user interface
@@ -129,7 +152,9 @@ Develop a comprehensive Markdown editing solution that:
 7. Maintains minimal computational overhead
 
 ## 4. Project Objectives
+
 ### 4.1 Primary Objectives
+
 1. Create a responsive, user-friendly Markdown editing interface
 2. Implement robust real-time Markdown parsing and rendering
 3. Develop a comprehensive, interactive Markdown help system
@@ -137,13 +162,16 @@ Develop a comprehensive Markdown editing solution that:
 5. Ensure cross-platform compatibility and performance
 
 ### 4.2 Secondary Objectives
+
 1. Provide customizable editing experience
 2. Implement error-tolerant markdown parsing
 3. Create an extensible application architecture
 4. Develop a clean, modern user interface
 
 ## 5. Methodology and Approach
+
 ### 5.1 Design Principles
+
 - User-Centric Design
 - Modular Architecture
 - Reactive Programming Paradigm
@@ -151,6 +179,7 @@ Develop a comprehensive Markdown editing solution that:
 - Extensibility and Maintainability
 
 ### 5.2 Development Methodology
+
 1. Requirements Gathering
    - User interviews
    - Competitive analysis
@@ -177,7 +206,9 @@ Develop a comprehensive Markdown editing solution that:
    - Performance benchmarking
 
 ## 6. System Design
+
 ### 6.1 Architecture Overview
+
 ```mermaid
 graph TD
     A[User Interface] --> B[Markdown Parser]
@@ -231,6 +262,7 @@ func parseMarkdown(_ markdown: String) -> AttributedString {
 ```
 
 #### 7.2.2 File Management
+
 ```swift
 func saveMarkdownFile(content: String, fileName: String) {
     let documentsDirectory = FileManager.default.urls(
@@ -250,16 +282,17 @@ func saveMarkdownFile(content: String, fileName: String) {
 ```
 
 ## 8. Results and Discussion
+
 ### 8.1 Feature Achievements
+
 - ✓ Real-time Markdown rendering
 - ✓ Comprehensive syntax support
 - ✓ Intuitive user interface
 - ✓ Built-in Markdown help guide
 - ✓ Efficient file management
 
-
-
 ### 8.3 Challenges and Solutions
+
 1. **Markdown Parsing Complexity**
    - Challenge: Handling diverse Markdown syntax
    - Solution: Robust error-tolerant parsing strategy
@@ -273,9 +306,11 @@ func saveMarkdownFile(content: String, fileName: String) {
    - Solution: Efficient state management, lazy rendering
 
 ## 9. Conclusion
+
 MarkdownTextEditor successfully addresses the need for an intuitive, feature-rich Markdown editing experience. By leveraging SwiftUI's capabilities and following user-centric design principles, the application provides a seamless, responsive writing environment that simplifies Markdown document creation.
 
 ## 10. Future Scope
+
 1. Dark Mode Support
 2. Advanced Syntax Highlighting
 3. Cloud Synchronization
@@ -288,46 +323,51 @@ MarkdownTextEditor successfully addresses the need for an intuitive, feature-ric
 ## 11. References
 
 ### Academic and Technical Publications
+
 1. Gruber, J. (2004). **Markdown: A Lightweight Markup Language**
    - Original Markdown Specification
-   - URL: https://daringfireball.net/projects/markdown/
+   - URL: <https://daringfireball.net/projects/markdown/>
 
 2. Apple Inc. (2021). **SwiftUI Documentation**
    - Official SwiftUI Programming Guide
-   - URL: https://developer.apple.com/documentation/swiftui/
+   - URL: <https://developer.apple.com/documentation/swiftui/>
 
 3. CommonMark Specification (2019). **Standardized Markdown Parsing**
    - Comprehensive Markdown Parsing Standard
-   - URL: https://commonmark.org/
+   - URL: <https://commonmark.org/>
 
 ### Technical Frameworks and Libraries
+
 4. Swift Programming Language (2022)
    - Official Swift Language Documentation
-   - URL: https://docs.swift.org/swift-book/
+   - URL: <https://docs.swift.org/swift-book/>
 
 5. Markdown-it (Open Source Project)
    - Advanced Markdown Parsing Library
-   - URL: https://github.com/markdown-it/markdown-it
+   - URL: <https://github.com/markdown-it/markdown-it>
 
 ### User Interface and Design
+
 6. Nielsen, J. (2020). **Designing User Interfaces**
    - Principles of User-Centered Design
-   - URL: https://www.nngroup.com/articles/ten-usability-heuristics/
+   - URL: <https://www.nngroup.com/articles/ten-usability-heuristics/>
 
 7. Apple Human Interface Guidelines (2022)
    - SwiftUI Design Principles
-   - URL: https://developer.apple.com/design/human-interface-guidelines/
+   - URL: <https://developer.apple.com/design/human-interface-guidelines/>
 
 ### Performance and Optimization
+
 8. Ray Wenderlich. (2021). **Swift Performance Optimization**
    - Performance Techniques in Swift
-   - URL: https://www.raywenderlich.com/22111913-optimizing-swift-performance
+   - URL: <https://www.raywenderlich.com/22111913-optimizing-swift-performance>
 
 9. WWDC Sessions on SwiftUI (2021-2022)
    - Advanced SwiftUI Techniques
-   - URL: https://developer.apple.com/videos/wwdc2022/
+   - URL: <https://developer.apple.com/videos/wwdc2022/>
 
 ### Related Research Papers
+
 10. Johnson, A., et al. (2020). **Declarative UI Frameworks: A Comparative Study**
     - Comparative Analysis of Modern UI Frameworks
     - DOI: 10.1145/3386618.3386623
@@ -337,42 +377,51 @@ MarkdownTextEditor successfully addresses the need for an intuitive, feature-ric
     - DOI: 10.1109/VISUAL.2019.8933799
 
 ### Online Resources and Tutorials
+
 12. Swift by Sundell
     - Advanced Swift and SwiftUI Tutorials
-    - URL: https://www.swiftbysundell.com/
+    - URL: <https://www.swiftbysundell.com/>
 
 13. Hacking with Swift
     - Comprehensive SwiftUI Learning Resources
-    - URL: https://www.hackingwithswift.com/
+    - URL: <https://www.hackingwithswift.com/>
 
 ### Open Source Inspirations
+
 14. GitHub Markdown Editors Collection
     - Open Source Markdown Editing Projects
-    - URL: https://github.com/topics/markdown-editor
+    - URL: <https://github.com/topics/markdown-editor>
 
 ### Software Development Methodologies
+
 15. Martin, R. C. (2018). **Clean Code: A Handbook of Agile Software Craftsmanship**
     - Software Design and Development Principles
     - ISBN: 0132350882
 
 ### Markdown Ecosystem
+
 16. Markdown Guide
     - Comprehensive Markdown Documentation
-    - URL: https://www.markdownguide.org/
+    - URL: <https://www.markdownguide.org/>
 
 ### Version Control and Collaboration
+
 17. Git Documentation
     - Version Control Best Practices
-    - URL: https://git-scm.com/doc
-
+    - URL: <https://git-scm.com/doc>
 
 ## 12. Appendices
+
 ### A: User Manual
+
 ### B: Technical Specifications
+
 ### C: Development Environment Setup
+
 ### D: Testing Methodology
+
 ### E: User Feedback Analysis
+
 ### F: Performance Profiling Results
 
 ---
-

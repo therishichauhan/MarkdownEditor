@@ -1,0 +1,48 @@
+{
+  "name": "markdowntexteditor",
+  "version": "1.0.0",
+  "description": "SwiftUI-powered Markdown editing application with comprehensive Markdown linting",
+  "main": "index.js",
+  "scripts": {
+    "lint:md": "markdownlint .",
+    "lint:md:fix": "markdownlint . --fix",
+    "prepare": "npm install -g markdownlint-cli",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "keywords": [
+    "markdown",
+    "editor", 
+    "swiftui",
+    "linting",
+    "documentation",
+    "text-editor"
+  ],
+  "author": "Rishi Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "markdownlint-cli": "^0.32.2"
+  },
+  "dependencies": {},
+  "resolutions": {
+    "markdownlint-cli": "^0.32.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/MarkdownTextEditor"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/MarkdownTextEditor/issues"
+  },
+  "homepage": "https://github.com/yourusername/MarkdownTextEditor#readme",
+  "config": {
+    "markdownlint": {
+      "default": true,
+      "MD003": { "style": "atx" },
+      "MD013": { "line_length": 80 }
+    }
+  }
+} 
