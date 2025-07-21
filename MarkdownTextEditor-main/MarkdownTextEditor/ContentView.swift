@@ -87,6 +87,7 @@ struct MarkdownRule: Identifiable {
 struct MarkdownRuleView: View {
     let rule: MarkdownRule
     
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(rule.title)
