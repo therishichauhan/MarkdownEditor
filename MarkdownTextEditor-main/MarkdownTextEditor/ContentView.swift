@@ -234,7 +234,7 @@ struct ContentView: View {
     
     func getAttributedString(_ markdown: String) -> AttributedString {
         do {
-            let attributedString = try AttributedString(markdown: markdown, options: .init(interpretedSyntax: .inlineOnlyUntilNewline))
+            let attributedString = try AttributedString(markdown: markdown)
             return attributedString
         } catch {
             print("Couldn't parse markdown: \(error)")
