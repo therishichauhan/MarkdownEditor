@@ -151,7 +151,7 @@ struct ContentView: View {
                 // Text Formatting
                 Spacer()
                 
-                HStack {
+        HStack {
                     Text("Font Size:")
                     Slider(value: $fontSize, in: 10...24, step: 1)
                         .frame(width: 100)
@@ -169,10 +169,10 @@ struct ContentView: View {
             // Main Content Area
             HStack {
                 // Markdown Input
-                VStack {
+            VStack {
                     Text("Markdown Editor")
-                        .fontWeight(.bold)
-                    
+                    .fontWeight(.bold)
+                
                     if !isPreviewMode {
                         TextEditor(text: $markdownText)
                             .font(.system(size: fontSize))
@@ -195,18 +195,18 @@ struct ContentView: View {
                         .fontWeight(.bold)
                     
                     ScrollView {
-                        Text(getAttributedString(markdownText))
+                Text(getAttributedString(markdownText))
                             .font(.system(size: fontSize))
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                            .padding()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .padding()
                             .background(backgroundColor)
-                            .cornerRadius(16)
+                    .cornerRadius(16)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 16)
                                     .stroke(Color.gray.opacity(0.3), lineWidth: 1)
                             )
-                    }
-                }
+            }
+        }
                 .frame(maxWidth: .infinity)
             }
             .padding()

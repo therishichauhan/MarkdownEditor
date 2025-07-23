@@ -219,8 +219,9 @@ graph TD
 ```
 
 ### 6.2 Component Breakdown
+
 1. **ContentView**
-   - Main application interface
+    Main application interface
    - Manages editing and preview states
    - Handles user interactions
 
@@ -235,7 +236,9 @@ graph TD
    - Error-tolerant file operations
 
 ## 7. Implementation Details
+
 ### 7.1 Core Technologies
+
 - **Language:** Swift 5.5+
 - **Framework:** SwiftUI
 - **Parsing:** AttributedString
@@ -243,7 +246,9 @@ graph TD
 - **Architecture:** MVVM
 
 ### 7.2 Key Implementation Strategies
+
 #### 7.2.1 Markdown Parsing
+
 ```swift
 func parseMarkdown(_ markdown: String) -> AttributedString {
     do {
